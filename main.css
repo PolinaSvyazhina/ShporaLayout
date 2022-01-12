@@ -1,4 +1,8 @@
 /* Navbar container */
+body {
+    margin: 0;
+}
+
 
 .navbar {
     overflow: hidden;
@@ -69,3 +73,253 @@
     display: block;
 }
 
+.search-container{
+    float: right;
+
+    padding: 14px 16px;
+}
+
+.grid-container {
+    max-width: 960px;
+    margin: 50px auto;
+    display: grid;
+    grid-template-rows: repeat(3, 200px);
+    grid-template-columns: repeat(3, 1fr);
+}
+.post-1 {
+    display: flex;
+    background: #fff;
+    border: 10px solid #efddd0;
+    grid-row-start: 1;
+    grid-row-end: 3;
+    grid-column-start: 1;
+    grid-column-end: 3;
+}
+.post-2 {
+    background-image: url(https://cdn.pixabay.com/photo/2013/07/12/14/50/pacman-148906_960_720.png);
+    grid-row-start: 1;
+    grid-column-start: 3;
+}
+.post-3 {
+    background: #f4efe9;
+    grid-row-start: 2;
+    grid-column-start: 3;
+}
+.post-4 {
+    background-image: url(https://cdn.pixabay.com/photo/2013/07/12/12/31/pacman-145849_960_720.png);
+    grid-row-start: 3;
+    grid-column-start: 3;
+}
+.post-5 {
+    background: #f4efe9;
+    grid-row-start: 3;
+    grid-column-start: 2;
+}
+.post-6 {
+    background-image: url(https://media.vandalimg.com/common/1200x800/2008101527.jpg);
+    grid-row-start: 3;
+    grid-column-start: 1;
+}
+.post-inner {
+    margin: auto;
+    color: #555;
+    padding: 30px;
+    text-align: center;
+}
+
+.post-inner h2 {
+    font-weight: 500;
+    font-size: 26px;
+}
+
+.post-inner h3 {
+    font-weight: 500;
+    font-size: 22px;
+}
+
+.post-inner p {
+    line-height: 1.5;
+}
+
+.post-inner a {
+    color: white;
+    text-decoration: none;
+    font-weight: 500;
+    text-transform: lowercase;
+    display: inline-block;
+    padding: 10px 30px;
+    background: #ea7a64;
+    border: 2px solid transparent;
+    transition: .3s;
+}
+
+.post-inner a:hover {
+    background: white;
+    color: #ea7a64;
+    border-color: #ea7a64;
+}
+
+
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+}
+
+.top-panel {
+    padding: 15px 0;
+    display: flex;
+    justify-content: center;
+    box-shadow: 0 15px 24px rgba(0, 0, 0, 0.22);
+}
+
+.top-panel a {
+    display: block;
+    position: relative;
+    padding-left: 20px;
+    font-family: 'Montserrat Alternates', sans-serif;
+    font-size: 16px;
+    letter-spacing: 1px;
+    color: #ea7a64;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+.top-panel a:before {
+    content: "\f100";
+    font-family: FontAwesome;
+    position: absolute;
+    left: 5px;
+    transition: .3s;
+}
+
+.top-panel a:hover:before {
+    left: 0;
+}
+
+.container {
+    max-width: 960px;
+    margin: 50px auto;
+    padding: 0 10px;
+}
+
+h1 {
+    font-family: 'Montserrat Alternates', sans-serif;
+    font-weight: 500;
+    margin-bottom: 50px;
+    text-align: center;
+    color: #555;
+}
+
+kbd {
+    font-weight: 400;
+    white-space: nowrap;
+}
+
+pre {
+    background: #f5f5f5;
+    padding: 20px;
+    margin-bottom: 30px;
+    overflow: auto;
+    text-shadow: 0 1px white;
+    font-family: "Courier New", monospace;
+    white-space: pre;
+    word-spacing: normal;
+    word-break: normal;
+    word-wrap: normal;
+    border: 1px solid #e3eaf0;
+    font-size: 14px;
+    border-radius: 3px;
+    width: 100%;
+}
+
+pre b {
+    float: right;
+}
+
+.grid-container {
+    margin-bottom: 30px;
+    font-family: 'Roboto', sans-serif;
+}
+
+article {
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+}
+
+.post-inner {
+    margin: auto;
+    color: #555;
+    padding: 30px;
+    text-align: center;
+}
+
+.post-inner h2 {
+    font-weight: 500;
+    font-size: 26px;
+}
+
+.post-inner h3 {
+    font-weight: 500;
+    font-size: 22px;
+}
+
+@media (max-width: 699px) {
+
+    .post-2,
+    .post-4,
+    .post-6 {
+        height: 200px;
+    }
+
+    h1 {
+        font-size: 24px;
+    }
+}
+
+@media (min-width: 700px) {
+    .grid-container {
+        display: grid;
+        grid-template-rows: [start] 200px [row2] 200px [row3] 200px [row-end];
+        grid-template-columns: [start] 1fr [col2] 1fr [col3] 1fr [col-end];
+        margin-bottom: 50px;
+        box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+    }
+
+    .post-1 {
+        grid-row-start: span 2;
+        grid-column-start: span 2;
+    }
+
+    .post-2 {
+        grid-row-start: start;
+        grid-column-start: col3;
+    }
+
+    .post-3 {
+        grid-row-start: row2;
+        grid-column-start: col3;
+    }
+
+    .post-4 {
+        grid-row-start: row3;
+        grid-column-start: col3;
+        order: 6;
+    }
+
+    .post-5 {
+        grid-row-start: row3;
+        grid-column-start: col2;
+        order: 5;
+    }
+
+    .post-6 {
+        grid-row-start: row3;
+        grid-column-start: start;
+        order: 4;
+    }
+}
