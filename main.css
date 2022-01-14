@@ -1,8 +1,14 @@
-/* Navbar container */
-body {
+* {
+    box-sizing: border-box;
     margin: 0;
 }
 
+body {
+    margin: 0;
+    overflow-y: hidden;
+}
+
+/* Navbar container */
 
 .navbar {
     overflow: hidden;
@@ -75,9 +81,9 @@ body {
 
 .search-container{
     float: right;
-
     padding: 14px 16px;
 }
+
 
 .grid-container {
     max-width: 960px;
@@ -123,7 +129,7 @@ body {
 .post-inner {
     margin: auto;
     color: #555;
-    padding: 30px;
+    padding: 40px;
     text-align: center;
 }
 
@@ -161,13 +167,6 @@ body {
 
 
 
-* {
-    box-sizing: border-box;
-}
-
-body {
-    margin: 0;
-}
 
 .top-panel {
     padding: 15px 0;

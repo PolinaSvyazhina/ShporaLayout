@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 <head>
     <meta charset="UTF-8">
     <title>Title</title>
@@ -8,32 +8,59 @@
 </head>
 <body>
 <header>
-    <!--здесь поиск и менюха с картами и монстрами-->
         <nav>
-            <a class="active" href="#">Главна</a>
-            <a href="#">Правила игры</a>
-            <div class="dropdown">
-                <button class="dropbtn"> Типы монстров
-                    <i class="fa fa-caret-down"></i>
-                </button>
-                <div class="dropdown-content">
-                    <a href="#">Статические</a>
-                    <a href="#">Бегают за Тобой как ужаленные</a>
+            <div class="navbar">
+                <a href="main.html">Главная</a>
+                <a href="#">Правила игры</a>
+                <div class="dropdown">
+                    <button class="dropbtn">Типы монстров
+                        <i class="fa fa-caret-down"></i>
+                    </button>
+                    <div class="dropdown-content">
+                        <a href="monstersStaticHandbook.html">Статические долбаебы</a>
+                        <a href="monstersDinamHandbook.html">Динамические долбаебы</a>
+                    </div>
+                </div>
+
+                <div class="search-container">
+                    <form action="action.php">
+                        <input type="text" placeholder="Хочется на шпору..." name="search">
+                        <button type="submit"><i class="fa fa-search"></i></button>
+                    </form>
                 </div>
             </div>
-
-            <div class="search-container">
-                <form action="action.php">
-                    <input type="text" placeholder="Поиск.." name="search">
-                    <button type="submit"><i class="fa fa-search"></i></button>
-                </form>
-            </div>
         </nav>
-</header>
+    </header>
+<main>
+    <div class="container">
+        <div class="post">
+            <div class="post-image">
+                <img src="https://cdn.pixabay.com/photo/2013/07/12/12/57/ghost-146620_960_720.png">
+            </div>
+            <div class="post-content">
+                <div class="post-header">
+                    <h1>Статические монстры и где Они обитают</h1>
 
+                    <div class="post-meta">
+                        <time datetime="2019-04-01">Январь</time>
+                        <span class="author">Аполлинария Антоновна</span>
+                        <span class="category">Записки сумашедшего</span>
+                    </div>
+                </div>
+                <p>
+                    Эти монстры встречают Нас первый раз на таске "учимся обходить"
+                    Довольно примитивные монстры.
+                    Стоят на месте и ждут, когда пакман на Них наткнется.
+                </p>
+            </div>
+        </div>
+    </div>
+</main>
 
 <footer>
-    похуй
+    <div>
+        inst: polinaSvyazhina
+    </div>
 </footer>
 
 </body>
