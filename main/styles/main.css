@@ -8,90 +8,14 @@ body {
     overflow-y: hidden;
 }
 
-/* Navbar container */
-
-.navbar {
-    overflow: hidden;
-    background-color: #333;
-    font-family: Arial;
-}
-
-/* Links inside the navbar */
-.navbar a {
-    float: left;
-    font-size: 16px;
-    color: white;
-    text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;
-}
-
-/* The dropdown container */
-.dropdown {
-    float: left;
-    overflow: hidden;
-}
-
-/* Dropdown button */
-.dropdown .dropbtn {
-    font-size: 16px;
-    border: none;
-    outline: none;
-    color: white;
-    padding: 14px 16px;
-    background-color: inherit;
-    font-family: inherit; /* Important for vertical align on mobile phones */
-    margin: 0; /* Important for vertical align on mobile phones */
-}
-
-/* Add a red background color to navbar links on hover */
-.navbar a:hover, .dropdown:hover .dropbtn {
-    background-color: red;
-}
-
-/* Dropdown content (hidden by default) */
-.dropdown-content {
-    display: none;
-    position: absolute;
-    background-color: #f9f9f9;
-    min-width: 160px;
-    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-    z-index: 1;
-}
-
-/* Links inside the dropdown */
-.dropdown-content a {
-    float: none;
-    color: black;
-    padding: 12px 16px;
-    text-decoration: none;
-    display: block;
-    text-align: left;
-}
-
-/* Add a grey background color to dropdown links on hover */
-.dropdown-content a:hover {
-    background-color: #ddd;
-}
-
-/* Show the dropdown menu on hover */
-.dropdown:hover .dropdown-content {
-    display: block;
-}
-
-.search-container{
-    float: right;
-    padding: 14px 16px;
-}
-
-
 .grid-container {
     max-width: 960px;
-    margin: 50px auto;
+    margin: 5px auto 0;
     display: grid;
     grid-template-rows: repeat(3, 200px);
     grid-template-columns: repeat(3, 1fr);
 }
+
 .post-1 {
     display: flex;
     background: #fff;
@@ -101,31 +25,37 @@ body {
     grid-column-start: 1;
     grid-column-end: 3;
 }
+
 .post-2 {
     background-image: url(https://cdn.pixabay.com/photo/2013/07/12/14/50/pacman-148906_960_720.png);
     grid-row-start: 1;
     grid-column-start: 3;
 }
+
 .post-3 {
     background: #f4efe9;
     grid-row-start: 2;
     grid-column-start: 3;
 }
+
 .post-4 {
     background-image: url(https://cdn.pixabay.com/photo/2013/07/12/12/31/pacman-145849_960_720.png);
     grid-row-start: 3;
     grid-column-start: 3;
 }
+
 .post-5 {
     background: #f4efe9;
     grid-row-start: 3;
     grid-column-start: 2;
 }
+
 .post-6 {
     background-image: url(https://media.vandalimg.com/common/1200x800/2008101527.jpg);
     grid-row-start: 3;
     grid-column-start: 1;
 }
+
 .post-inner {
     margin: auto;
     color: #555;
@@ -164,9 +94,6 @@ body {
     color: #ea7a64;
     border-color: #ea7a64;
 }
-
-
-
 
 .top-panel {
     padding: 15px 0;

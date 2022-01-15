@@ -3,25 +3,24 @@
 <head>
     <meta charset="UTF-8">
     <title>Title</title>
-    <link rel="stylesheet" type="text/css" href="monstersDinamHandbook.css">
+    <link rel="stylesheet" type="text/css" href="styles/monstersDynamicHandbook.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="../styles/navbar.css">
 </head>
 <body>
 <header>
-    <nav class="container">
+    <nav>
         <div class="navbar">
-            <a href="main.html">Главная</a>
-            <a href="#">Правила игры</a>
+            <a href="../main/main.html">Главная</a>
             <div class="dropdown">
                 <button class="dropbtn">Типы монстров
                     <i class="fa fa-caret-down"></i>
                 </button>
                 <div class="dropdown-content">
-                    <a href="monstersStaticHandbook.html">Статические долбаебы</a>
-                    <a href="monstersDinamHandbook.html">Динамические долбаебы</a>
+                    <a href="../monstersStaticHandbook/monstersStaticHandbook.html">Статические монстры</a>
+                    <a href="../monstersDynamicHandbook/monstersDynamicHandbook.html">Динамические монстры</a>
                 </div>
             </div>
-
             <div class="search-container">
                 <form action="action.php">
                     <input type="text" placeholder="Хочется на шпору..." name="search">
@@ -32,6 +31,7 @@
     </nav>
 </header>
 <main class="container">
+    <p class="text-p">Наведи на монстра, чтобы узнать о Нём больше</p>
     <div class=" flex-container">
         <div class="block">
             <img src="https://cdn.pixabay.com/photo/2012/04/16/12/53/ghost-35852_960_720.png">
@@ -44,30 +44,32 @@
         <div class="block">
             <img src="https://cdn.pixabay.com/photo/2013/07/12/12/31/pacman-145848_960_720.png">
             <div class="block__text">
-                <h3>Монстр умный</h3>
-                <p>Монстр преследующий Тебя.<br>Беги от Него, глупец.<br> Но лучше на Него.<br>И поэтические слезы.</p>
+                <h3>Монстр туда-сюда</h3>
+                <p>Монстр ходящий.<br>Он умнее статического.<br> Но не сильно.<br>У Него есть путь и нет цели.<br>Он просто ходит туда-сюда.</p>
             </div>
         </div>
 
         <div class="block">
             <img src="https://cdn.pixabay.com/photo/2013/07/12/12/31/pacman-145846_960_720.png">
             <div class="block__text">
-                <h3>Монстр умный</h3>
-                <p>Монстр преследующий Тебя.<br>Беги от Него, глупец.<br> Но лучше на Него.<br>И поэтические слезы.</p>
+                <h3>Монстр - прыгун </h3>
+                <p>Монстр.<br>Все Мы боимся монстров.<br> А этот ещё ходит через клетку.</p>
             </div>
         </div>
 
         <div class="block">
             <img src="https://cdn.pixabay.com/photo/2013/07/12/14/57/pirate-149112_960_720.png">
             <div class="block__text">
-                <h3>Монстр умный</h3>
-                <p>Монстр преследующий Тебя.<br>Беги от Него, глупец.<br> Но лучше на Него.<br>И поэтические слезы.</p>
+                <h3>Монстр странный</h3>
+                <p>Монстр.<br>Все Мы боимся монстров.<br> Вот и гадай, что Он может</p>
             </div>
         </div>
 
 
     </div>
 </main>
+<footer>
 
+</footer>
 </body>
 </html>
